@@ -23,7 +23,7 @@ pfServer.use('/uploads',express.static('./uploads'))
 
 // THIS WAY TO HOST or  SEE OUR APPLICATION IN THE PORT 3000
 
-const PORT = 3000
+const PORT = 3000 || process.env.PORT
 
 pfServer.listen(PORT,()=>{
     console.log(`Project fair server started at PORT :${PORT}`);
